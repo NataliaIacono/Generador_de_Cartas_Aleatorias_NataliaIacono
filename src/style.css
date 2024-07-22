@@ -1,1 +1,21 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.container-fluid {
+    height: 100vh;
+}
+
+.row {
+    height: 100vh;
+}
+
+#numeroCarta {
+    font-family: serif;
+    font-size: 200px;
+}
+/*transform: rotate(180deg);*/
+
+.iconTop {
+    font-size: 80px 
+}
+
+.iconBottom {
+    font-size: 80px 
+}
