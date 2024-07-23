@@ -9,6 +9,7 @@
 #numeroCarta {
     font-family: serif;
     font-size: 200px;
+    
 }
 
 
@@ -20,3 +21,4 @@
     font-size: 80px;
     transform: rotate(180deg);
 }
+
