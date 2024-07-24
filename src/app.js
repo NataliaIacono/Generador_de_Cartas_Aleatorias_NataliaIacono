@@ -45,3 +45,4 @@ window.onload = () => {
   generarCarta();
   setInterval(generarCarta, 10000);
 }
+

@@ -3,13 +3,18 @@
 }
 
 .row {
-    height: 100vh;
+    height: 80vh;
 }
 
 #numeroCarta {
     font-family: serif;
     font-size: 200px;
     
+}
+
+.card {
+    width: 50vh;
+    height: 80vh;
 }
 
 
@@ -22,3 +27,7 @@
     transform: rotate(180deg);
 }
 
+/*.btn-success:hover {
+    background-color: #2fbc40;
+    border-color: #e74c3c;
+  }*/
