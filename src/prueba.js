@@ -1,7 +1,4 @@
-window.onload = () => {
-  console.log("Window loaded");
-
-  const generarCarta = () => {
+const generarCarta = () => {
     let numero = document.querySelector('#numeroCarta');
     let numeroRandom = Math.floor(Math.random() * 12) + 1;       
   
@@ -40,14 +37,37 @@ window.onload = () => {
       
       randomIcono();
   }  
-  generarCarta();
+
+window.onload = () => {
+    
+    generarCarta();
+        
+  }
+
   setInterval(generarCarta, 10000);
-
+  
   const boton = document.querySelector('.btn');
-boton.addEventListener("click", () => {
-  generarCarta();
-});
-}
+  boton.addEventListener("click", () => {
+    generarCarta();
+  });
 
+
+  //Imput
+
+ const imputAncho = document.getElementById ('InputW');
+ imputAncho.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        const carta = document.querySelector('.card');
+        carta.style.width = imputAncho.value + 'px';
+    }
+});
+
+ const imputAlto = document.getElementById ('InputH');
+ imputAlto.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        const carta = document.querySelector('.card');
+        carta.style.height = imputAlto.value + 'px';
+    }
+});
 
 
