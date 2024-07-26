@@ -52,7 +52,7 @@ window.onload = () => {
   });
 
 
-  //Imput
+  //Imput.
 
  const imputAncho = document.getElementById ('InputW');
  imputAncho.addEventListener('keypress', function (e) {
