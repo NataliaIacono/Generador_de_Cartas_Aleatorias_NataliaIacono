@@ -1,4 +1,6 @@
 const generarCarta = () => {
+  console.log("prueba.js");
+  
     let numero = document.querySelector('#numeroCarta');
     let numeroRandom = Math.floor(Math.random() * 12) + 1;       
   
@@ -30,6 +32,10 @@ const generarCarta = () => {
       if (iconoSeleccionado === "♥" || iconoSeleccionado === "♦") {
         icono.style.color = "red"; 
         iconoDos.style.color = "red";
+      }
+        if (iconoSeleccionado === "♠" || iconoSeleccionado === "♣") {
+        icono.style.color = "black"; 
+        iconoDos.style.color = "black";
       }
       iconoDos.innerHTML = iconoSeleccionado;
       icono.innerHTML = iconoSeleccionado;
